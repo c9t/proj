@@ -1,0 +1,98 @@
+.header_fixed
+  position: fixed
+  background-color: #FFFFFF
+  width: 100%
+  font-family: Montserrat-Medium, sans-serif
+
+.header_wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header_menu__content
+  display: flex
+  list-style: none
+  flex-wrap: wrap
+
+@media (max-width: 837px)
+  .header_menu__content
+    display: flex
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    transform: translateX(-100%)
+    margin: 0
+    padding: 0
+    transition: all .5s
+    background-color: $gray
+    z-index: 5
+    &.open
+      transform: translateX(0)
+
+    .header_menu__item
+      margin-bottom: $margin_small
+
+  .header_fixed
+    padding-top: 10px
+    padding-bottom: 10px
+
+.header_menu__item
+  a
+    color: #000
+    text-decoration: none
+    padding: 0 15px
+    transition: all .3s
+    &:hover
+      color: #3bcfcb
+
+.navigation_burger
+    position: relative
+    display: none
+    width: 30px
+    height: 20px
+
+@media (max-width: 837px)
+  .navigation_burger
+    display: flex
+    z-index: 6
+
+
+.navigation_burger
+  &:before,&:after,span
+      position: absolute
+      content: ''
+      width: 100%
+      height: 3px
+      background-color: #000
+      transition: all .3s
+
+.navigation_burger
+  &:before
+    top: 0
+
+.navigation_burger span
+  top: calc(50% - 1.5px)
+
+.navigation_burger
+    &:after
+      bottom: 0
+
+.nav_add
+  &:before
+    top: 50%
+    transform: rotate(45deg)
+
+.nav_add
+  span
+    top: 50%
+    width: 0
+
+.nav_add
+  &:after
+    top: 50%
+    transform: rotate(-45deg)
