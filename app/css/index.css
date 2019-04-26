@@ -177,6 +177,51 @@ p {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
 
+.advantages_section {
+  background-color: #10c9c3; }
+
+.advantages_section_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  max-width: 1100px; }
+
+.advantages_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 250px;
+  margin: -webkit-calc(10px + 1.04vw) 10px -webkit-calc(10px + 1.04vw) 0px;
+  margin: calc(10px + 1.04vw) 10px calc(10px + 1.04vw) 0px; }
+  .advantages_content img {
+    padding-right: -webkit-calc(20px + 1.30vw);
+    padding-right: calc(20px + 1.30vw); }
+
+.advantages_items {
+  color: #FFFFFF; }
+  .advantages_items h3 {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: -webkit-calc(17px + .52vw);
+    font-size: calc(17px + .52vw);
+    margin-bottom: 0px; }
+  .advantages_items p {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 15px;
+    margin-top: 0px; }
+
 .about_section {
   margin-bottom: -webkit-calc(10px + 1.56vw);
   margin-bottom: calc(10px + 1.56vw); }
@@ -297,7 +342,8 @@ p {
   z-index: 2;
   max-width: 50%;
   min-width: 290px;
-  padding-right: 5.35vw; }
+  padding-right: 5.35vw;
+  padding-bottom: 20px; }
   .skills_section_wrapper h3 {
     font-family: Montserrat-Medium, sans-serif;
     font-size: -webkit-calc(20px + .52vw);
@@ -357,7 +403,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   float: right;
-  max-width: 420px; }
+  max-width: 450px; }
   .top_section_wrapper h1 {
     font-size: -webkit-calc(18px + 1.04vw);
     font-size: calc(18px + 1.04vw);
