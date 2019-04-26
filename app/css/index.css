@@ -222,6 +222,43 @@ p {
     font-size: 15px;
     margin-top: 0px; }
 
+.gallery_section_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.gallery_items {
+  min-width: 320px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  -webkit-transition: all .9s;
+  -o-transition: all .9s;
+  transition: all .9s; }
+  .gallery_items img {
+    width: 100%;
+    height: 340px;
+    vertical-align: middle; }
+
+.gallery_button {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: -webkit-calc(20px + 1.30vw) 0 -webkit-calc(20px + 1.30vw) 0;
+  padding: calc(20px + 1.30vw) 0 calc(20px + 1.30vw) 0; }
+  .gallery_button a {
+    font-family: Montserrat-Medium, sans-serif;
+    text-decoration: none;
+    color: #787878; }
+
 .about_section {
   margin-bottom: -webkit-calc(10px + 1.56vw);
   margin-bottom: calc(10px + 1.56vw); }
