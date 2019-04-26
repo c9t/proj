@@ -7,5 +7,11 @@ $( document ).ready(function() {
         $(this).toggleClass('nav_add');
 
         headerMenu.toggleClass('open');
-    })
+    });
+
+        $(".testimonials_slider").owlCarousel({
+            items: 1,
+            nav: true,
+            dots: true,
+        });
 });
