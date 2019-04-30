@@ -47,7 +47,8 @@ p {
   position: fixed;
   background-color: #FFFFFF;
   width: 100%;
-  font-family: Montserrat-Medium, sans-serif; }
+  font-family: Montserrat-Medium, sans-serif;
+  z-index: 10; }
 
 .header_wrapper {
   display: -webkit-box;
@@ -290,6 +291,33 @@ p {
     font-family: NunitoSans-Regular, sans-serif;
     color: #787878;
     max-width: 620px; }
+
+.brands_section_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: -webkit-calc(25px + 2.08vw) 0 -webkit-calc(20px + 1.30vw) 0;
+  padding: calc(25px + 2.08vw) 0 calc(20px + 1.30vw) 0; }
+
+.brands_items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 127px;
+  margin: 0 40px 20px 40px; }
 
 .category_section {
   background-color: #f5f5f5; }
