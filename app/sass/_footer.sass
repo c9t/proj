@@ -1,0 +1,38 @@
+.footer_section
+  background-color: $black
+  color: $gray_2
+
+.footer_section_wrapper
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: $padding_medium 0 $padding_medium 0
+
+.footer_left
+  h3
+    margin-top: 0
+    font-family: Montserrat-Medium, sans-serif
+    color: $white
+  p
+    font-family: NunitoSans-Regular, sans-serif
+    max-width: 250px
+
+.footer_middle
+  display: flex
+  flex-direction: column
+  a
+    font-family: NunitoSans-Regular, sans-serif
+    color: $gray_2
+    text-decoration: none
+    &:not(:last-child)
+      margin-bottom: 5px
+
+.footer_right
+  display: flex
+  ul
+    list-style: none
+    margin: 0
+  a
+    font-family: NunitoSans-Regular, sans-serif
+    color: $gray_2
+    text-decoration: none
