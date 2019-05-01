@@ -1,17 +1,18 @@
 div.form_section
     div.container
         div.form_section_wrapper
-            div.form_section_top
-                h4 Need a Project?
+            div.form_section_content
+                h3 Need a Project?
                 p Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.
-            div.form_section_input
-                div.form_input_top
-                    div.input_top_1
-                        input(placeholder="Your Name")
-                    div.input_top_2
-                        input(placeholder="Your Email")
-                div.form_input_middle
-                    input(placeholder="Your Title")
-                div.form_input_bottom
-                    textarea(placeholder="Your Comment", rows="10", cols="79", maxlength="120")
-                a.top_section_button(href='#') SEND MESSAGE
+            form.form_items
+                div.form_wrapper
+                    div.form_items_top
+                        div.form_item_1
+                            input(placeholder="Your Name")
+                        div.form_item_2
+                            input(placeholder="Your Email")
+                    div.form_items_middle
+                        input(placeholder="Your Title")
+                    div.form_items_bottom
+                        textarea(placeholder="Your Message", cols="20", rows="8", maxlength="100")
+            a.top_section_button(href="#") SEND MESSAGE

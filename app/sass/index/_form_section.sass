@@ -4,65 +4,64 @@
 .form_section_wrapper
   display: flex
   flex-direction: column
-  justify-content: center
   align-items: center
-  padding: $padding_large 0px $padding_large 0px
+  padding: $padding_medium 0 $padding_medium 0
 
-.form_section_top
+.form_section_content
   display: flex
   flex-direction: column
   align-items: center
   text-align: center
-  h4
+  h3
     font-family: Montserrat-Medium, sans-serif
     font-size: $fz_medium
-    margin: 0px
+    margin: 0
   p
     font-family: NunitoSans-Regular, sans-serif
     color: $gray_2
-    max-width: 520px
+    max-width: 500px
 
-.form_section_input
+.form_wrapper
   display: flex
   flex-direction: column
-  justify-content: center
   align-items: center
-  max-width: 700px
+
+.form_items
+  width: 100%
   input, textarea
-    border: 0px
     outline: none
+    border: 0px #FFFFFF
     padding: 10px
-    font-family:  NunitoSans-Regular, sans-serif
-    color: $gray_2
+    font-family: NunitoSans-Regular, sans-serif
 
-.form_input_top
+.form_items_top
   display: flex
+  flex-wrap: wrap
+  width: 50%
   margin-bottom: 20px
-  width: 100%
-  input
-    max-width: 100%
+  .form_item_1,.form_item_2
+    width: 45%
+    input
+      width: 100%
+    &:not(:last-child)
+      margin-right: 10%
 
-.input_top_1
-  width: 45%
-  margin-right: 10%
-  input
-    width: 100%
-
-.input_top_2
-  width: 45%
-  input
-    width: 100%
-
-.form_input_middle
-  width: 100%
+.form_items_middle
+  width: 50%
   margin-bottom: 20px
   input
     width: 100%
 
-.form_input_bottom
+.form_items_bottom
+  width: 50%
   margin-bottom: 20px
   textarea
     resize: none
+    width: 100%
+
+@media (max-width: 750px)
+  .form_items_top,.form_items_middle,.form_items_bottom
+    width: 100%
 
 .top_section_button
   display: flex
