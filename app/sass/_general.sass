@@ -23,7 +23,7 @@ p
   flex: 1 1 50%
   min-width: 290px
 
-//----------------HOME.jade
+//----------------home.jade
 
 .home_section_top
   background-color: $gray
@@ -35,7 +35,7 @@ p
   align-items: center
   text-align: center
   padding: $padding_large 0 $padding_large 0
-  h3
+  h1
     font-family: Montserrat-Medium, sans-serif
     font-size: $fz_large
     margin: 0
@@ -43,3 +43,49 @@ p
     font-family: NunitoSans-Regular, sans-serif
     color: $gray_2
     max-width: 500px
+
+//----------------about.jade
+
+.about_top_section
+  background-color: $gray_2
+
+.about_top_section_wrapper
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: $padding_large 0 $padding_large 0
+  h1
+    font-family: Montserrat-Medium, sans-serif
+    font-size: $fz_large
+    margin: 0
+    color: $white
+  p
+    font-family: NunitoSans-Regular, sans-serif
+    color: $white
+    max-width: 500px
+
+.about_bottom_section_wrapper
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: $padding_large 0 $padding_large 0
+  h2
+    font-family: Montserrat-Medium, sans-serif
+    font-size: $fz_large
+    margin: 0
+  p
+    font-family: NunitoSans-Regular, sans-serif
+    color: $gray_2
+    max-width: 500px
+
+.about_middle_section
+  position: relative
+  display: flex
+  align-items: center
+  min-height: 42.26vw
+  background-color: $gray
+  z-index: 1
