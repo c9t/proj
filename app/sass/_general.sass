@@ -132,3 +132,65 @@ p
     align-items: center
     text-align: center
     max-width: 1135px
+
+//----------------single_project.jade
+
+.project_section
+  position: relative
+  display: flex
+  align-items: center
+  min-height: 39vw
+  background-color: #e9e9e9
+  z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    display: flex
+    min-width: 320px
+    width: 50%
+    max-width: 960px
+    background-color: #f8f9f9
+    z-index: 1
+
+.project_section_wrapper
+  position: relative
+  z-index: 2
+  max-width: 50%
+  min-width: 290px
+  padding-right: 5.35vw
+  padding-bottom: 20px
+  h1
+    font-family: Montserrat-Medium, sans-serif
+    font-size: calc(20px + .52vw)
+  h4
+    font-family: Montserrat-Medium, sans-serif
+  span
+    font-family: NunitoSans-Regular, sans-serif
+    font-weight: normal
+    color: $gray_2
+  p
+    font-family: NunitoSans-Regular, sans-serif
+    color: $gray_2
+
+.project_section_nav
+  min-height: 5vw
+
+.project_section_nav_wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: $padding_small
+  img
+    max-width: 20px
+    max-height: 20px
+  span
+    font-family: Montserrat-Medium, sans-serif
+    font-weight: bold
+    margin: 0 $margin_medium 0 $margin_medium
+  a
+    text-decoration: none
+    color: $black
