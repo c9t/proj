@@ -296,6 +296,20 @@ p {
     text-decoration: none;
     color: #141414; }
 
+.contact_section {
+  overflow: hidden;
+  position: relative;
+  height: 45vh;
+  background-color: #f5f5f5; }
+  .contact_section iframe {
+    padding: -webkit-calc(20px + 1.30vw);
+    padding: calc(20px + 1.30vw);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
 .header_fixed {
   position: fixed;
   background-color: #ffffff;
